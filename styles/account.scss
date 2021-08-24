@@ -1,0 +1,42 @@
+.buy {
+  margin: 10px auto;
+  max-width: 480px;
+  & > li {
+    margin-bottom: 30px;
+  }
+  .localization {
+    .coordonate {
+      .city {
+        display: block;
+      }
+    }
+  }
+  .products {
+    margin: 10px 0;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    .product {
+      .price {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.date {
+  li {
+    padding-left: 10px;
+
+    & > span {
+      display: block;
+      margin-left: 10px;
+    }
+  }
+}
+
+form {
+  & > div > label {
+    display: block;
+  }
+}

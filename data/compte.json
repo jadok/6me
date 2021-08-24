@@ -1,0 +1,820 @@
+[
+  {
+    "id": 1,
+    "date": "2021-07-27",
+    "localization": {
+      "name": "carefour",
+      "place": {
+        "city": "Nantes",
+        "zipCode": 44100,
+        "adress": "6 Rue Michel le Lou du Breil"
+      }
+    },
+    "products": [
+      {
+        "name": "involtini",
+        "origine": "industriel",
+        "category": "entré",
+        "cost": {
+          "unitPrice": 39.58,
+          "nbr": 1,
+          "qty": 0.12,
+          "unit": "€/kg",
+          "total": 4.75
+        }
+      },
+      {
+        "name": "ricotta crème",
+        "origine": "industriel",
+        "category": "entré",
+        "cost": {
+          "unitPrice": 21.14,
+          "qty": 0.14,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 2.96
+        }
+      },
+      {
+        "name": "sauce soja salée",
+        "origine": "industriel",
+        "category": "condiment",
+        "cost": {
+          "unitPrice": 26.33,
+          "qty": 0.15,
+          "nbr": 2,
+          "unit": "€/L",
+          "total": 7.9
+        }
+      },
+      {
+        "name": "whysky sir edwards",
+        "origine": "industriel",
+        "category": "whisky",
+        "cost": {
+          "unitPrice": 17.49,
+          "nbr": 1,
+          "qty": 1,
+          "unit": "€/L",
+          "total": 17.49
+        }
+      },
+      {
+        "name": "Déodorant ato dark temptation",
+        "origine": "industriel",
+        "category": "déodorant",
+        "cost": {
+          "unitPrice": 20.75,
+          "qty": 0.2,
+          "nbr": 2,
+          "unit": "€/L",
+          "total": 8.3
+        }
+      },
+      {
+        "name": "sauce poivre",
+        "origine": "industriel",
+        "category": "condiment",
+        "cost": {
+          "unitPrice": 4.2,
+          "qty": 0.25,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 1.05
+        }
+      },
+      {
+        "name": "mezest swhawar wrap",
+        "origine": "industriel",
+        "category": "préparation cuisine",
+        "cost": {
+          "unitPrice": 19.08,
+          "qty": 0.37,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 4.2
+        }
+      },
+      {
+        "name": "brique jus d'orange",
+        "origine": "industriel",
+        "category": "jus d'orange",
+        "cost": {
+          "unitPrice": 0.99,
+          "qty": 1,
+          "nbr": 1,
+          "unit": "€/L",
+          "total": 0.99
+        }
+      },
+      {
+        "name": "filet nois agneau",
+        "origine": "industriel",
+        "category": "agneau",
+        "cost": {
+          "unitPrice": 37.67,
+          "qty": 0.258,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 9.72
+        }
+      },
+      {
+        "name": "filet poulet",
+        "origine": "industriel",
+        "category": "poulet",
+        "cost": {
+          "unitPrice": 14.97,
+          "qty": 0.4582,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 6.86
+        }
+      },
+      {
+        "name": "fraise charlotte",
+        "origine": "industriel",
+        "category": "fraise",
+        "cost": {
+          "unitPrice": 12.375,
+          "qty": 0.4,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 4.95
+        }
+      },
+      {
+        "name": "sauce pomme de terre",
+        "origine": "industriel",
+        "category": "condiment",
+        "cost": {
+          "unitPrice": 6,
+          "qty": 0.26,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 1.56
+        }
+      }
+    ],
+    "total": 73.6,
+    "paiement": [
+      {
+        "name": "compte courrant",
+        "mode": "carte bancaire",
+        "total": 54.6,
+        "CUR": "EUR"
+      },
+      {
+        "name": "titres restaurant",
+        "mode": "carte bancaire",
+        "total": 19,
+        "CUR": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "date": "2021-07-10",
+    "localization": {
+      "name": "Couëdel A.",
+      "place": {
+        "city": "Nantes",
+        "zipCode": 44000,
+        "adress": "14 Quai de la FOSS"
+      }
+    },
+    "products": [
+      {
+        "name": "tome bleu au chèvre",
+        "origine": "marché",
+        "category": "fromage",
+        "cost": {
+          "unitPrice": 25.8,
+          "nbr": 1,
+          "qty": 0.19,
+          "unit": "€/kg",
+          "total": 4.9
+        }
+      },
+      {
+        "name": "tome basque",
+        "origine": "marché",
+        "category": "fromage",
+        "cost": {
+          "unitPrice": 27.9,
+          "qty": 0.192,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 5.36
+        }
+      },
+      {
+        "name": "brie est",
+        "origine": "marché",
+        "category": "fromage",
+        "cost": {
+          "unitPrice": 16.2,
+          "qty": 0.196,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 5.36
+        }
+      },
+      {
+        "name": "morbier",
+        "origine": "marché",
+        "category": "fromage",
+        "cost": {
+          "unitPrice": 19.8,
+          "qty": 0.308,
+          "nbr": 1,
+          "unit": "€/kg",
+          "total": 6.1
+        }
+      }
+    ],
+    "total": 19.54,
+    "paiement": [
+      {
+        "name": "compte courrant",
+        "mode": "carte bancaire",
+        "total": 19.54,
+        "CUR": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "date": "2021-08-01",
+    "localization": {
+      "name": "Carrefour contact",
+      "place": {
+        "city": "Nantes",
+        "zipCode": 44100,
+        "adress": "6 rue le lou breil"
+      }
+    },
+    "products": [
+      {
+        "name": "maqueraux moutarde",
+        "origine": "industrie",
+        "category": "maqueraux",
+        "cost": {
+          "unitPrice": 25.8,
+          "nbr": 1,
+          "qty": 0.169,
+          "unit": "€/kg",
+          "total": 1.3
+        }
+      },
+      {
+        "name": "aiguillet de poulet",
+        "origine": "industrie",
+        "category": "maqueraux",
+        "cost": {
+          "unitPrice": -1,
+          "nbr": 1,
+          "qty": -1,
+          "unit": "€/kg",
+          "total": 3.45
+        }
+      },
+      {
+        "name": "barquette de champinion brun",
+        "origine": "producteur",
+        "category": "champinion",
+        "cost": {
+          "unitPrice": 2.9,
+          "nbr": 1,
+          "qty": 0.5,
+          "unit": "€/kg",
+          "total": 1.95
+        }
+      },
+      {
+        "name": "gingembre",
+        "origine": "producteur",
+        "category": "gingembre",
+        "cost": {
+          "unitPrice": 6,
+          "nbr": 1,
+          "qty": 0.19,
+          "unit": "€/kg",
+          "total": 1.14
+        }
+      },
+      {
+        "name": "grignotte poulet - barbeque",
+        "origine": "industrie",
+        "category": "poulet",
+        "cost": {
+          "unitPrice": 11.72,
+          "nbr": 1,
+          "qty": 0.25,
+          "unit": "€/kg",
+          "total": 2.93
+        }
+      },
+      {
+        "name": "nectarine",
+        "origine": "producteur",
+        "category": "nectarine",
+        "cost": {
+          "unitPrice": 3.8,
+          "nbr": 1,
+          "qty": 1,
+          "unit": "€/kg",
+          "total": 3.8
+        }
+      },
+      {
+        "name": "poivron",
+        "origine": "producteur",
+        "category": "poivron",
+        "cost": {
+          "unitPrice": 3.95,
+          "nbr": 1,
+          "qty": 0.955,
+          "unit": "€/kg",
+          "total": 3.77
+        }
+      }
+    ],
+    "total": 18.34,
+    "paiement": [
+      {
+        "name": "compte courrant",
+        "mode": "carte bancaire",
+        "total": 18.34,
+        "CUR": "EUR"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "date": "2021-08-02",
+    "localization": {
+      "name": "Carrefour contact",
+      "place": {
+        "city": "Nantes",
+        "zipCode": 44100,
+        "adress": "6 rue le lou breil"
+      }
+    },
+    "products": [
+      {
+        "name": "petit pois",
+        "origine": "industrie",
+        "category": "petits pois",
+        "cost": {
+          "unitPrice": 1.6,
+          "nbr": 1,
+          "qty": 0.5,
+          "unit": "€/kg",
+          "total": 0.8
+        }
+      },
+      {
+        "name": "huile d'olive en verre",
+        "origine": "industrie",
+        "category": "huile olive",
+        "cost": {
+          "unitPrice": 6.24,
+          "nbr": 1,
+          "qty": 1,
+          "unit": "€/kg",
+          "total": 6.24
+        }
+      },
+      {
+        "name": "lion wild",
+        "origine": "industrie",
+        "category": "céréal",
+        "cost": {
+          "unitPrice": 8.5,
+          "nbr": 1,
+          "qty": 0.36,
+          "unit": "€/kg",
+          "total": 3.06
+        }
+      },
+      {
+        "name": "petits pois carotte",
+        "origine": "industrie",
+        "category": "petits pois carotte",
+        "cost": {
+          "unitPrice": 2.2,
+          "nbr": 1,
+          "qty": 0.5,
+          "unit": "€/kg",
+          "total": 1.1
+        }
+      },
+      {
+        "name": "Céréal lion",
+        "origine": "industrie",
+        "category": "céréal",
+        "cost": {
+          "unitPrice": 5.75,
+          "nbr": 1,
+          "qty": 0.4,
+          "unit": "€/kg",
+          "total": 2.3
+        }
+      },
+      {
+        "name": "biscuit petit déjeuné",
+        "origine": "industrie",
+        "category": "biscuit",
+        "cost": {
+          "unitPrice": 4.65,
+          "nbr": 1,
+          "qty": 0.4,
+          "unit": "€/kg",
+          "total": 1.86
+        }
+      },
+      {
+        "name": "brique fondante président",
+        "origine": "industrie",
+        "category": "fromage",
+        "cost": {
+          "unitPrice": 11.4,
+          "nbr": 1,
+          "qty": 0.2,
+          "unit": "€/kg",
+          "total": 2.28
+        }
+      },
+      {
+        "name": "brique jus d'orange",
+        "origine": "producteur",
+        "category": "fromage",
+        "cost": {
+          "unitPrice": 0.99,
+          "nbr": 1,
+          "qty": 1,
+          "unit": "€/kg",
+          "total": 0.99
+        }
+      },
+      {
+        "name": "oignon jaune",
+        "origine": "producteur",
+        "category": "oignon jaune",
+        "cost": {
+          "unitPrice": 2.6,
+          "nbr": 1,
+          "qty": 1,
+          "unit": "€/kg",
+          "total": 2.6
+        }
+      },
+      {
+        "name": "pamplemous rose",
+        "origine": "producteur",
+        "category": "pamplemous rose",
+        "cost": {
+          "unitPrice": 1.1,
+          "nbr": 1,
+          "qty": 1,
+          "unit": "€/pièce",
+          "total": 1.1
+        }
+      }
+    ],
+    "total": 22.33,
+    "paiement": [
+      {
+        "name": "compte courrant",
+        "mode": "carte bancaire",
+        "total": 3.33,
+        "CUR": "EUR"
+      },
+      {
+        "name": "titres restaurant",
+        "mode": "carte restaurant",
+        "total": 19,
+        "CUR": "EUR"
+      }
+    ]
+  },
+  {
+    "date": "2021-08-05",
+    "localization": {
+      "place": {
+        "adress": "6 rue le lou breil",
+        "zipCode": 44100,
+        "city": "nantes"
+      },
+      "name": "carefour contact - lou du breil"
+    },
+    "products": [
+      {
+        "category": "banane",
+        "cost": {
+          "unitPrice": 2.1,
+          "qty": 0.865,
+          "nbr": 1,
+          "total": 1.8165,
+          "unit": "€/kg"
+        },
+        "name": "banane",
+        "origine": "industriel"
+      }
+    ],
+    "total": 1.8165,
+    "id": 5
+  },
+  {
+    "date": "2020-07-30",
+    "localization": {
+      "place": {
+        "adress": "2 - 20, rue de la Marne",
+        "zipCode": 44024,
+        "city": "Nantes cedex 01"
+      },
+      "name": "Galeries Lafayette"
+    },
+    "products": [
+      {
+        "category": "chemise",
+        "cost": {
+          "unitPrice": 59.9,
+          "qty": 1,
+          "nbr": 1,
+          "total": 59.9,
+          "unit": "€/pièce"
+        },
+        "name": "Calvin klein maroq",
+        "origine": "industriel"
+      },
+      {
+        "category": "panthalon",
+        "cost": {
+          "unitPrice": 79,
+          "qty": 1,
+          "nbr": 1,
+          "total": 79,
+          "unit": "€/pièce"
+        },
+        "name": "2523 Levi's arcs",
+        "origine": "industriel"
+      },
+      {
+        "category": "t-shirt",
+        "cost": {
+          "unitPrice": 8.99,
+          "qty": 1,
+          "nbr": 1,
+          "total": 8.99,
+          "unit": "€/pièce"
+        },
+        "name": "255 Jack and Jones",
+        "origine": "industriel"
+      },
+      {
+        "category": "t-shirt",
+        "cost": {
+          "unitPrice": 8.99,
+          "qty": 1,
+          "nbr": 1,
+          "total": 8.99,
+          "unit": "€/pièce"
+        },
+        "name": "jack and Jones",
+        "origine": "industriel"
+      },
+      {
+        "category": "t-shirt",
+        "cost": {
+          "unitPrice": 27.5,
+          "qty": 1,
+          "nbr": 1,
+          "total": 27.5,
+          "unit": "€/pièce"
+        },
+        "name": "IKKS Men",
+        "origine": "industriel"
+      },
+      {
+        "category": "t-shirt",
+        "cost": {
+          "unitPrice": 45,
+          "qty": 1,
+          "nbr": 1,
+          "total": 45,
+          "unit": "€/pièce"
+        },
+        "name": "Diesel",
+        "origine": "industriel"
+      }
+    ],
+    "total": 229.38000000000002,
+    "id": 6
+  },
+  {
+    "date": "2021-01-16",
+    "localization": {
+      "place": {
+        "adress": "6 Rue Doct Zamenhof",
+        "zipCode": 44200,
+        "city": "nantes"
+      },
+      "name": "nature & découverte beaulieu"
+    },
+    "products": [
+      {
+        "category": "chassure",
+        "cost": {
+          "unitPrice": 11.95,
+          "qty": 1,
+          "nbr": 1,
+          "total": 11.95,
+          "unit": "€/pièce"
+        },
+        "name": "chaussure basic healtho",
+        "origine": "industriel"
+      },
+      {
+        "category": "thisane",
+        "cost": {
+          "unitPrice": 4.95,
+          "qty": 1,
+          "nbr": 1,
+          "total": 4.95,
+          "unit": "€/pièce"
+        },
+        "name": "tisane bio 7 blantes x20",
+        "origine": "industriel"
+      },
+      {
+        "category": "tisane",
+        "cost": {
+          "unitPrice": 4.95,
+          "qty": 1,
+          "nbr": 1,
+          "total": 4.95,
+          "unit": "€/pièce"
+        },
+        "name": "tisane bio détox x20 infu",
+        "origine": "industriel"
+      },
+      {
+        "category": "chassure",
+        "cost": {
+          "unitPrice": 11.95,
+          "qty": 1,
+          "nbr": 1,
+          "total": 11.95,
+          "unit": "€/pièce"
+        },
+        "name": "chaussure basic healtho",
+        "origine": "industriel"
+      },
+      {
+        "category": "goupillon",
+        "cost": {
+          "unitPrice": 1,
+          "qty": 1,
+          "nbr": 1,
+          "total": 1,
+          "unit": "€/pièce"
+        },
+        "name": "goupillon inox 17.5cm",
+        "origine": "industriel"
+      }
+    ],
+    "total": 34.839999999999996,
+    "id": 7
+  },
+  {
+    "date": "2019-02-11",
+    "localization": {
+      "place": {
+        "adress": "5 rue de valmy",
+        "zipCode": "44000",
+        "city": "nantes"
+      },
+      "name": "la cité, le centre des congrès de nantes"
+    },
+    "products": [
+      {
+        "category": "affiche",
+        "cost": {
+          "unitPrice": 6,
+          "qty": 1,
+          "nbr": 1,
+          "total": 6,
+          "unit": "€/pièce"
+        },
+        "name": "affiches simple",
+        "origine": "industriel"
+      }
+    ],
+    "total": 6,
+    "id": "8"
+  },
+  {
+    "date": "2021-09-10",
+    "localization": {
+      "place": {
+        "adress": "place du commerce",
+        "zipCode": "44000",
+        "city": "nantes"
+      },
+      "name": "fnac nantes"
+    },
+    "products": [
+      {
+        "category": "livre fantastique",
+        "cost": {
+          "unitPrice": 9.9,
+          "qty": 1,
+          "nbr": 1,
+          "total": 9.9,
+          "unit": "€/pièce"
+        },
+        "name": "la furie du/butcher",
+        "origine": "industriel"
+      },
+      {
+        "category": "livre - fantasy",
+        "cost": {
+          "unitPrice": 9.9,
+          "qty": 1,
+          "nbr": 1,
+          "total": 9.9,
+          "unit": "€/pièce"
+        },
+        "name": "la furie du/butcher",
+        "origine": "industriel"
+      },
+      {
+        "category": "livre - fantasy",
+        "cost": {
+          "unitPrice": 9.9,
+          "qty": 1,
+          "nbr": 1,
+          "total": 9.9,
+          "unit": "€/pièce"
+        },
+        "name": "la fure du/butcher",
+        "origine": "industriel"
+      }
+    ],
+    "total": 29.700000000000003,
+    "id": "9"
+  },
+  {
+    "date": "2020-08-22",
+    "localization": {
+      "place": {
+        "adress": "zone commerciale pole sud",
+        "zipCode": "44115",
+        "city": "base goulaine"
+      },
+      "name": "villa luca"
+    },
+    "products": [
+      {
+        "category": "entré",
+        "cost": {
+          "unitPrice": 7.5,
+          "qty": 1,
+          "nbr": 1,
+          "total": 7.5,
+          "unit": "€/pièce"
+        },
+        "name": "gravlax",
+        "origine": "restauration"
+      },
+      {
+        "category": "plat principale",
+        "cost": {
+          "unitPrice": 16.1,
+          "qty": 1,
+          "nbr": 1,
+          "total": 16.1,
+          "unit": "€/pièce"
+        },
+        "name": "tartare rosso",
+        "origine": "restauration"
+      },
+      {
+        "category": "vin rouge italien",
+        "cost": {
+          "unitPrice": 3.8,
+          "qty": 1,
+          "nbr": 1,
+          "total": 3.8,
+          "unit": "€/verre"
+        },
+        "name": "verre nero avola",
+        "origine": "producteur"
+      }
+    ],
+    "total": 27.400000000000002,
+    "id": "10"
+  }
+]

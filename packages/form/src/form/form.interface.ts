@@ -1,4 +1,4 @@
-import { ChangeEvent, InputHTMLAttributes } from "react";
+import { ChangeEvent, InputHTMLAttributes } from 'react';
 
 export interface FieldInputs {
   className?: string;
