@@ -1,0 +1,69 @@
+query product {
+  products {
+    id
+    date
+    localization {
+      name
+      place {
+        ... on Coordonate {
+          adress
+          city
+          zipCode
+        }
+        ... on GeoLocalization {
+          latitude
+          longitude
+        }
+      }
+    }
+    products {
+      name
+      category
+      origine
+      cost {
+        qty
+        unitPrice
+        unit
+        total
+      }
+    }
+    total
+  }
+}
+
+query productsPrefill {
+  productsPrefill {
+    category
+    origine
+    localizations {
+      name
+      place {
+        ... on Coordonate {
+          adress
+          city
+          zipCode
+        }
+        ... on GeoLocalization {
+          latitude
+          longitude
+        }
+      }
+    }
+    products {
+      name
+      category
+      origine
+      cost {
+        qty
+        unitPrice
+        nbr
+        unit
+        total
+      }
+    }
+  }
+}
+
+mutation addBuy($input: BuyInput!) {
+  addBuy(input: $input)
+}
