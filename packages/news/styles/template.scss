@@ -1,0 +1,63 @@
+@import "theme.scss";
+
+body {
+  font-family: arial;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #369;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  padding: 1rem;
+}
+
+aside {
+  padding: 1rem;
+  background-color: #936;
+}
+
+footer {
+  grid-column: span 3;
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.4em;
+  background-color: #690;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+h2 {
+  padding-left: 0.2rem;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+h3 {
+  padding-left: 0.2rem;
+  margin-top: 0;
+  margin-bottom: .2rem;
+}
+
+ol, ul {
+  padding-left: 1.5rem;
+}

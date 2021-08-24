@@ -63,7 +63,6 @@ export const getPostSlugs = async (): Promise<Array<string>> => new Promise((res
 export const getPostBySlug = (slug: string, fields: string[] = []) => {
   return getPostSlugs().then((files) => {
     const matchingFile = files.filter((file) => {
-      console.log({ slug, file })
       return slug === getFileWithoutExtension(file);
     });
     const fileContents = fs.readFileSync(matchingFile[0], 'utf8');
