@@ -5,4 +5,4 @@ type PostType = {
   content: string
 }
 
-export default PostType
+export default PostType;

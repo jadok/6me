@@ -4,12 +4,10 @@ type Props = {
   content: string
 }
 
-const PostBody = ({ content }: Props) => (
+const PostBody = ({ content }: Props): JSX.Element => (
   <div className="content">
-    <div
-      dangerouslySetInnerHTML={{ __html: content }}
-    />
+    <div dangerouslySetInnerHTML={{ __html: content }} />
   </div>
 );
 
-export default PostBody
+export default PostBody;
