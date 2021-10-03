@@ -1,5 +1,18 @@
 {
-  "private": true,
+  "name": "@6me/news",
+  "license": "MIT",
+  "version": "0.0.0",
+  "private": false,
+  "description": "",
+  "author": "",
+  "homepage": "https://github.com/jadok/6me/tree/main/packages/news#readme",
+  "bugs": {
+    "url": "https://github.com/jadok/6me/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadok/6me.git"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",

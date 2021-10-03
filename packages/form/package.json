@@ -1,17 +1,17 @@
 {
-  "name": "sixfootsixdesigns-react-library-boilerplate",
+  "name": "@6me/form",
   "license": "MIT",
   "version": "0.0.0",
   "private": false,
-  "description": "React Typescript Library Boilerplate",
-  "author": "James Olson",
-  "homepage": "https://github.com/sixfootsixdesigns/React-Library-Boilerplate",
+  "description": "Dynamics generator form React library",
+  "author": "",
+  "homepage": "https://github.com/jadok/6me/tree/main/packages/form#readme",
   "bugs": {
-    "url": "https://github.com/sixfootsixdesigns/React-Library-Boilerplate/issues"
+    "url": "https://github.com/jadok/6me/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sixfootsixdesigns/React-Library-Boilerplate.git"
+    "url": "git+https://github.com/jadok/6me.git"
   },
   "scripts": {
     "build": "yarn clean; rollup -c",
@@ -26,8 +26,6 @@
     "test": "jest --maxWorkers=2",
     "test:watch": "yarn test --watch",
     "test:coverage": "jest --coverage --colors --maxWorkers=2",
-    "hygen": "hygen",
-    "component:new": "hygen component with-prompt",
     "publish": "npx semantic-release --no-ci"
   },
   "main": "index.js",
@@ -61,7 +59,6 @@
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "hygen": "^6.0.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.6.3",
     "node-sass": "^5.0.0",

@@ -9,7 +9,7 @@
         "isDefault": true
       },
       "problemMatcher": [],
-      "label": "npm: build",
+      "label": "markdown-utils npm:build",
       "detail": "tsc tsconfig.json"
     },
     {
@@ -20,7 +20,7 @@
         "isDefault": true
       },
       "problemMatcher": [],
-      "label": "npm: test",
+      "label": "markdown-utils npm:test",
       "detail": "jest"
     }
   ]
