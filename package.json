@@ -1,8 +1,8 @@
 {
   "name": "6me",
   "version": "1.0.0",
-  "description": "",
-  "main": "commitlint.config.js",
+  "description": "Collection of libraries",
+  "main": "",
   "dependencies": {
     "add-stream": "^1.0.0",
     "ansi-escapes": "^4.3.2",
@@ -411,7 +411,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jadok/6me/issues"
   },
