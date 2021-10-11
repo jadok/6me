@@ -1,16 +1,12 @@
 # News
 
-## Preview
+## Description
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+The purpose of this project is to store information data. The information is store in the [contents folder](./contents) in the markdown format.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/blog-starter-typescript)
+## Feature
 
-## Deploy your own
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/blog-starter-typescript&project-name=blog-starter-typescript&repository-name=blog-starter-typescript)
+- blog post
 
 ## How to use
 
