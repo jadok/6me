@@ -1,0 +1,7 @@
+type Query {
+
+  # product(id: String!): Buy
+  products(skip: Int = 0, take: Int = 25): [Buy!]!
+
+  productsPrefill: ProductsPrefillData!
+}

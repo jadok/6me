@@ -1,0 +1,48 @@
+query product {
+  products {
+    id,
+    date,
+    localization {
+      name,
+      place {
+        ... on Coordonate {
+          zipCode
+        }
+        ... on GeoLocalization {
+          latitude,
+          longitude
+        }
+      }
+    },
+    products {
+      name,
+      category,
+      origine,
+      cost {
+        qty,
+        unitPrice,
+        unit,
+        total
+      }
+    },
+    total
+  }
+}
+
+query productsPrefill {
+  productsPrefill {
+    categories
+    localizations {
+      name,
+      place {
+        ... on Coordonate {
+          zipCode
+        }
+        ... on GeoLocalization {
+          latitude,
+          longitude
+        }
+      }
+    }
+  }
+}
