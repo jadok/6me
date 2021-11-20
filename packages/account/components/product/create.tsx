@@ -1,37 +1,35 @@
 import React from 'react';
 
-import { ProduitPrefill } from '@graphql-types@';
-import { FieldInputs } from 'domain/form/form.interface';
-import { useForm } from 'domain/form/use-form';
-import { FormMotor } from 'domain/form/form-moteur';
+import { ProductPrefill } from '@graphql-types@';
+import { useForm, FormEngine, FieldInputs } from '@6me/form';
 
-interface ProduitInputs {
-  prefill: ProduitPrefill;
+interface ProductInputs {
+  prefill: ProductPrefill;
   afterSubmit: (data: Record<string, string>) => void;
 }
 
-export const getFields = (_data: ProduitPrefill): Record<string, FieldInputs> => ({
-  nom: { label: "nom", inputProps: { type: 'text', required: true } },
+export const getFields = (_data: ProductPrefill): Record<string, FieldInputs> => ({
+  name: { label: "nom", inputProps: { type: 'text', required: true } },
   origine: { label: "origine", inputProps: { type: 'text', required: true } },
-  categorie: { label: "categorie", inputProps: { type: 'text', required: true } },
-  cout_qte: { label: "Quantité", inputProps: { type: 'number', required: true } },
-  cout_prix_unite: { label: "Prix unité", inputProps: { type: 'number', required: true } },
-  cout_nbr: { label: "Nombre", inputProps: { type: 'number', required: true } },
-  cout_unite: { label: "unité", inputProps: { type: 'text', required: true } },
-  cout_total: { label: "Total", inputProps: { type: 'number', required: true } },
+  category: { label: "categorie", inputProps: { type: 'text', required: true } },
+  cost_qte: { label: "Quantité", inputProps: { type: 'number', required: true } },
+  cost_unitPrice: { label: "Prix unité", inputProps: { type: 'number', required: true } },
+  cost_nbr: { label: "Nombre", inputProps: { type: 'number', required: true } },
+  cost_unite: { label: "unité", inputProps: { type: 'text', required: true } },
+  cost_total: { label: "Total", inputProps: { type: 'number', required: true } },
 });
 
-export const CreateProduit = ({
+export const CreateProduct = ({
   prefill,
   afterSubmit,
-}: ProduitInputs): JSX.Element => {
+}: ProductInputs): JSX.Element => {
   const form = useForm({
     fields: getFields(prefill), 
     afterSubmit,
   });
   return (
     <form onSubmit={form.handleSubmit}>
-      <FormMotor {...form} />
+      <FormEngine {...form} />
     </form>
   )
 };

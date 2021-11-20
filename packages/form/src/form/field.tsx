@@ -1,8 +1,10 @@
-import React, { ChangeEvent } from 'react';
+import React, { ChangeEvent, InputHTMLAttributes } from 'react';
 
-import { FieldInputs } from './form.interface';
-
-interface FieldProps extends FieldInputs {
+export interface FieldProps {
+  className?: string;
+  label: string;
+  dataList?: Array<string>;
+  inputProps?: InputHTMLAttributes<HTMLInputElement>;
   handleChange: (e: ChangeEvent<HTMLInputElement>) => void;
 }
 
