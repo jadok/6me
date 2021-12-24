@@ -2,41 +2,43 @@ import React, { useState } from 'react';
 import {
   ProductsPrefillDocument,
   useProductsPrefillQuery,
+  useAddBuyMutation,
 } from '../../document/product.graphql';
 import { initializeApollo } from '../../lib/apollo';
-
-import { ProductPrefill, Product } from '@graphql-types@';
-import { Products } from 'components/product/products';
-import { CreateProduct } from 'components/product/create';
+import { ProductsPrefillData, Buy as BuyType, BuyInput, Product, Localization as LocalizationType } from '@graphql-types@';
+import { BuyEdit } from 'components/buy/edit';
 
 const Create = () => {
-  const data = useProductsPrefillQuery().data!
+  const data = useProductsPrefillQuery().data!;
+  const [addBuyMutation] = useAddBuyMutation();
 
-  const [products, setProducts] = useState<Array<Product>>([]);
-  const afterSubmitProducts = (data: Record<string, string>) => {
-    const product: Product = {
-      name: data.name,
-      origine: data.origine,
-      category: data.category,
-      cost: {
-        unitPrice: parseFloat(data.cost_unitPrice),
-        nbr: parseInt(data.cost_nbr, 10),
-        qty: parseFloat(data.cost_qty),
-        unit: data.cost_unite,
-        total: parseFloat(data.cost_total),
-      }
-    };
-    const newProducts = [ ...products ];
-    newProducts.push(product);
-    setProducts(newProducts);
+  const addBuy = (buyData: Partial<BuyType>): Promise<any> =>
+    addBuyMutation({
+      variables: {
+        input: buyData as BuyInput,
+      },
 
-  };
+      // //Follow apollo suggestion to update cache
+      // //https://www.apollographql.com/docs/angular/features/cache-updates/#update
+      // update: (cache, mutationResult) => {
+      //   const { data } = mutationResult
+      //   if (!data) return // Cancel updating name in cache if no data is returned from mutation.
+      //   // Read the data from our cache for this query.
+      //   const { viewer } = cache.readQuery({
+      //     query: ViewerDocument,
+      //   }) as ViewerQuery
+      //   const newViewer = { ...viewer }
+      //   // Add our comment from the mutation to the end.
+      //   newViewer.name = data.updateName.name
+      //   // Write our data back to the cache.
+      //   cache.writeQuery({ query: ViewerDocument, data: { viewer: newViewer } })
+      // },
+    })
+
   return (
     <>
       <section>
-        <h2>Products</h2>
-        <Products products={products} />
-        <CreateProduct afterSubmit={afterSubmitProducts} prefill={data.productsPrefill} />
+        <BuyEdit addBuy={addBuy} prefill={data.productsPrefill} />
       </section>
     </>
   );

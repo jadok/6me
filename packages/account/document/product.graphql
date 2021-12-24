@@ -6,6 +6,8 @@ query product {
       name,
       place {
         ... on Coordonate {
+          adress,
+          city,
           zipCode
         }
         ... on GeoLocalization {
@@ -31,11 +33,14 @@ query product {
 
 query productsPrefill {
   productsPrefill {
-    categories
+    category
+    origine
     localizations {
       name,
       place {
         ... on Coordonate {
+          adress,
+          city,
           zipCode
         }
         ... on GeoLocalization {
@@ -45,4 +50,8 @@ query productsPrefill {
       }
     }
   }
+}
+
+mutation addBuy($input: BuyInput!) {
+  addBuy(input: $input)
 }
