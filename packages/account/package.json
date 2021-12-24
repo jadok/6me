@@ -1,4 +1,5 @@
 {
+  "name": "@6me/account",
   "private": true,
   "scripts": {
     "codegen": "graphql-let",
@@ -14,6 +15,7 @@
     "@graphql-tools/schema": "6.0.18",
     "apollo-server-micro": "^2.16.1",
     "graphql": "15.3.0",
+    "immutable": "^4.0.0",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

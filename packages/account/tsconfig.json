@@ -19,7 +19,8 @@
     "target": "esnext",
     "baseUrl": ".",
     "paths": {
-      "@graphql-types@": ["node_modules/@types/graphql-let/__generated__/__types__"]
+      "@graphql-types@": ["node_modules/@types/graphql-let/__generated__/__types__"],
+      "@6me/form": ["../form/src"]
     }
   },
   "exclude": ["node_modules"],

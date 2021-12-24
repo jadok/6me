@@ -4,6 +4,13 @@
   & > li {
     margin-bottom: 30px;
   }
+  .localization {
+    .coordonate {
+      .city {
+        display: block;
+      }
+    }
+  }
   .products {
     margin: 10px 0;
     border-top: 1px solid;
@@ -25,5 +32,11 @@
       display: block;
       margin-left: 10px;
     }
+  }
+}
+
+form {
+  & > div > label {
+    display: block;
   }
 }

@@ -5,3 +5,7 @@ type Query {
 
   productsPrefill: ProductsPrefillData!
 }
+
+type Mutation {
+  addBuy(input: BuyInput!): ID!
+}

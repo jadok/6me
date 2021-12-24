@@ -14,23 +14,23 @@
     "url": "git+https://github.com/jadok/6me.git"
   },
   "scripts": {
-    "build": "yarn clean; rollup -c",
+    "build": "npm run clean; rollup -c",
     "clean": "rimraf dist",
-    "dev": "yarn storybook",
+    "dev": "npm run storybook",
     "format": "prettier --write \"src/**/*.{ts,tsx,json,js,jsx}\"",
     "format:check": "prettier --list-different \"src/**/*.{ts,tsx,json,js,jsx}\"",
-    "lint": "yarn lint:script && yarn lint:style",
+    "lint": "npm run lint:script && npm run lint:style",
     "lint:script": "eslint ./src --ext .js,.jsx,.ts,.tsx",
     "lint:style": "stylelint ./src",
     "storybook": "start-storybook -p 9001 -s ./src/assets -c .storybook",
     "test": "jest --maxWorkers=2",
-    "test:watch": "yarn test --watch",
+    "test:watch": "npm run test --watch",
     "test:coverage": "jest --coverage --colors --maxWorkers=2",
     "publish": "npx semantic-release --no-ci"
   },
-  "main": "index.js",
-  "module": "index.esm.js",
-  "types": "index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "classnames": "^2.2.6"
   },

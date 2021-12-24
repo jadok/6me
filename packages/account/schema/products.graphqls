@@ -57,6 +57,51 @@ type UnitCostProduct {
 
 """ProductsPrefillData"""
 type ProductsPrefillData {
-  categories: [String]!
+  category: [String]!
+  origine: [String]!
   localizations: [Localization]!
+}
+
+###Inputs
+"""BuyInput"""
+input BuyInput {
+  date: DateTime!
+  localization: LocalizationInput!
+  products: [ProductInput!]!
+}
+
+"""GeoLocalization"""
+input GeoLocalizationInput {
+  latitude: Float!
+  longitude: Float!
+}
+
+"""Coordonate"""
+input CoordonateInput {
+  adress: String!
+  zipCode: String!
+  city: String!
+}
+
+"""ProductInput"""
+input ProductInput {
+  category: String!
+  cost: UnitCostProductInput!
+  name: ID!
+  origine: String!
+}
+
+"""LocalizationInput"""
+input LocalizationInput {
+  place: CoordonateInput!
+  name: String!
+}
+
+"""UnitCostProduct"""
+input UnitCostProductInput {
+  unitPrice: Float!
+  qty: Float!
+  nbr: Int!
+  total: Float!
+  unit: String!
 }
