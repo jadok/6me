@@ -1,4 +1,4 @@
-import { QueryResolvers, MutationResolvers, PlaceTypeResolvers, ProductResolvers } from '@graphql-types@'
+import { QueryResolvers, MutationResolvers, PlaceTypeResolvers } from '@graphql-types@'
 import { join } from 'path';
 import { read, write } from './adapter/file';
 import { ResolverContext } from './apollo';
