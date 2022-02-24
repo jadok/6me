@@ -24,7 +24,8 @@ const PlaceTypeResolver: PlaceTypeResolvers = {
 
 const Query: Required<QueryResolvers<ResolverContext>> = {
   products: async (_parent, _args, _context, _info) => {
-    return await read(join(process.cwd(), "data", "compte.json"));
+    return read(join(process.cwd(), "data", "compte.json"))
+      .then(buys => buys.sort((p1: Buy, p2: Buy) => (new Date(p1.date)).getTime() - (new Date(p2.date)).getTime()));
   },
 
   productsPrefill: async (_parent, _args, _context, _info) => {
@@ -105,7 +106,7 @@ const Mutation: Required<MutationResolvers<ResolverContext>> = {
 
     await write(
       join(process.cwd(), "data", "compte.json"),
-      source.sort((p1: Buy, p2: Buy) => p1.date - p2.date)
+      source.sort((p1: Buy, p2: Buy) => (new Date(p1.date)).getTime() - (new Date(p2.date)).getTime()),
     );
     return lastId.toString();
   },

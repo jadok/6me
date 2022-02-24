@@ -8,7 +8,7 @@ export const Product = ({
   category,
   cost: { qty, unitPrice, unit, total },
 }: ProductType): JSX.Element => (
-  <li className={`product category-${category} origin-${origine}`}>
+  <div className={`category-${category} origin-${origine}`}>
     <span className="name">{name}</span>
     <div className="price">
       <span className="qty">{qty}</span>
@@ -16,5 +16,5 @@ export const Product = ({
       <span className="unit-price">{unitPrice}</span>
       <span className="total">{total}</span>
     </div>
-  </li>
+  </div>
 );

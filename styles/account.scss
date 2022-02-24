@@ -1,6 +1,7 @@
 .buy {
   margin: 10px auto;
   max-width: 480px;
+  width: 100%;
   & > li {
     margin-bottom: 30px;
   }
@@ -21,6 +22,22 @@
         justify-content: space-between;
       }
     }
+  }
+}
+
+.products-add {
+  @media screen and (min-width: 800px) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .product > div {
+    display: inline-block;
+    width: calc(100% - 3rem);
+  }
+  .product .delete {
+    display: inline-block;
+    margin-left: .7rem;
   }
 }
 

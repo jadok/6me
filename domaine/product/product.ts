@@ -21,11 +21,11 @@ export const priceTranform = (data: Record<string, string>) => {
   const total = parseFloat(data.cost_total) || 0;
 
   if (qty && unitPrice && nbr) {
-    data.cost_total = getTotalFromQtyUnitPrice(qty, unitPrice, nbr).toString();
+    data.cost_total = getTotalFromQtyUnitPrice(qty, unitPrice, nbr).toFixed(2).toString();
   } else if (unitPrice && nbr && total) {
-    data.cost_qty = getQtyFromTotalUnitPrice(total, unitPrice, nbr).toString();
+    data.cost_qty = getQtyFromTotalUnitPrice(total, unitPrice, nbr).toFixed(2).toString();
   } else if (qty && nbr && total) {
-    data.cost_unitPrice = getUnitPriceFromTotalQty(total, qty, nbr).toString();
+    data.cost_unitPrice = getUnitPriceFromTotalQty(total, qty, nbr).toFixed(2).toString();
   }
   return data;
 };

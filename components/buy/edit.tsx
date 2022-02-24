@@ -79,6 +79,12 @@ export const BuyEdit = ({
     });
   };
 
+  const deleteProduct = (id: number) => {
+    const newProducts = [...(buy.products as Product[])];
+    newProducts.splice(id, 1);
+    setBuy({ ...buy, products: newProducts });
+  };
+
   const formDate = useForm({
     fields: getFields(),
     afterSubmit,
@@ -93,10 +99,12 @@ export const BuyEdit = ({
         prefill={prefill}
       />
       <h2>Products</h2>
-      <ul className="buy">
-        <Products products={buy.products as Product[]} />
-      </ul>
-      <CreateProduct afterSubmit={afterSubmitProducts} prefill={prefill} />
+      <div className="products-add">
+        <ul className="buy">
+          <Products products={buy.products as Product[]} deleteProduct={deleteProduct} />
+        </ul>
+        <CreateProduct afterSubmit={afterSubmitProducts} prefill={prefill} />
+      </div>
       <form onSubmit={formDate.handleSubmit}>
         <FormEngine {...formDate} />
         <button type="submit">Ajouter la commande</button>
