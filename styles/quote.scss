@@ -1,0 +1,24 @@
+.quote {
+  background-color: #CCAC66;
+  padding: 1rem .2rem;
+  margin-bottom: 1rem;
+
+  .content p {
+    display: inline;
+  }
+
+  .author-pseudo {
+    color: purple;
+  }
+
+  .author-public {
+    font-weight: bold;
+
+    .lastname {
+      text-transform: uppercase;
+    }
+    .firstname {
+      text-transform: capitalize;
+    }
+  }
+}

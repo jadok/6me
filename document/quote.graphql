@@ -1,0 +1,16 @@
+query quotes {
+  quotes {
+    author {
+      ... on AnonymAuthor {
+          pseudo
+        }
+        ... on PublicAuthor {
+          firstname
+          lastname
+        }
+    }
+    id
+    medium
+    quote
+  }
+}

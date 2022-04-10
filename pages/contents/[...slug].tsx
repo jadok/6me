@@ -4,9 +4,6 @@ import { useRouter } from 'next/router'
 
 import Layout from '../../components/personnal/layout'
 
-import PostBody from '../../components/personnal/post-body'
-import PostHeader from '../../components/personnal/post-header'
-
 import PostType from '../../types/post'
 
 import markdownToHtml from '../../lib/markdownToHtml'
@@ -14,6 +11,8 @@ import { getPostBySlug, getAllPostsPaths } from '../../lib/api'
 import { join, sep } from 'path'
 import { postsDirectory } from '../../lib/constants'
 import ContentType from '../../types/content'
+import PostBody from 'components/post/body'
+import PostHeader from 'components/post/header'
 
 type Props = {
   post: PostType

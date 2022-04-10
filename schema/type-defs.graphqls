@@ -3,6 +3,8 @@ type Query {
   products(skip: Int = 0, take: Int = 25): [Buy!]!
 
   productsPrefill: ProductsPrefillData!
+
+  quotes(skip: Int = 0, take: Int = 25): [Quote!]
 }
 
 type Mutation {

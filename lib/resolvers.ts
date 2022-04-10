@@ -2,6 +2,7 @@ import {
   QueryResolvers,
   MutationResolvers,
   PlaceTypeResolvers,
+  AuthorTypeResolvers,
 } from "@graphql-types@";
 import { join } from "path";
 import { read, write } from "./adapter/file";
@@ -21,6 +22,19 @@ const PlaceTypeResolver: PlaceTypeResolvers = {
     return null;
   },
 };
+
+const AuthorType: AuthorTypeResolvers = {
+  __resolveType: (author: any, _context) => {
+    if (author.pseudo) {
+      return "AnonymAuthor";
+    }
+    if (author.firstname) {
+      return "PublicAuthor";
+    }
+    return null;
+  },
+};
+
 
 const Query: Required<QueryResolvers<ResolverContext>> = {
   products: async (_parent, _args, _context, _info) => {
@@ -88,6 +102,12 @@ const Query: Required<QueryResolvers<ResolverContext>> = {
       products: distinctProducts,
     } as ProductsPrefillData;
   },
+
+
+  // --- QUOTE
+  quotes: async (_parent, _args, _context, _info) => {
+    return read(join(process.cwd(), "data", "quote.json"));
+  },
 };
 
 const Mutation: Required<MutationResolvers<ResolverContext>> = {
@@ -112,4 +132,4 @@ const Mutation: Required<MutationResolvers<ResolverContext>> = {
   },
 };
 
-export default { Query, Mutation, PlaceType: PlaceTypeResolver };
+export default { Query, Mutation, PlaceType: PlaceTypeResolver, AuthorType: AuthorType };
