@@ -59,6 +59,6 @@
     "react-test-renderer": "^17.0.1",
     "sass": "^1.43.4",
     "typescript": "^3.9.7",
-    "yaml-loader": "0.6.0"
+    "yaml-loader": "0.8.0"
   }
 }
